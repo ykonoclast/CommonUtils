@@ -1,0 +1,34 @@
+{
+    "traits": ["physique", "coordination", "mental", "volonté", "présence"],
+    "lbl_attaque": "attaque",
+    "lbl_parade": "parade",
+    "lbl_metier": "art & métier",
+    "arbre_domaines": [{
+	    "lbl": "analyse",
+	    "comps": ["empathie", "investigation", "politique"]
+	}, {
+	    "lbl": "arts et métiers",
+	    "comps": ["art & métier"]
+	}, {
+	    "lbl": "arts physiques",
+	    "comps": ["acrobatie", "athlétisme", "équitation"]
+	}, {
+	    "lbl": "combat au corps à corps",
+	    "comps": []
+	}, {
+	    "lbl": "combat à distance",
+	    "comps": []
+	}, {
+	    "lbl": "érudition",
+	    "comps": ["culture", "occultisme", "sciences", "stratégie"]
+	}, {
+	    "lbl": "ombres",
+	    "comps": ["furtivité", "larcin", "sécurité"]
+	}, {
+	    "lbl": "nature",
+	    "comps": ["pièger", "pister", "survie"]
+	}, {
+	    "lbl": "social",
+	    "comps": ["art oratoire", "étiquette", "séduction", "subterfuge"]
+	}]
+}

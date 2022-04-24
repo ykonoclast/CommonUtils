@@ -1,0 +1,9 @@
+{
+    "init": {
+	"coordination": [1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9],#commentaire en fin de ligne
+	"mental": [-1, -1, 0, 0, 1, 1, 2, 2, 3, 3, 4]
+    },
+#commentaire pour vérifier que ça marche
+    "ND": [10, 15, 25, 40],
+    "lbl_ND": ["facile", "moyen", "difficile", "très difficile"]
+}
