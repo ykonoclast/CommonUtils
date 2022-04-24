@@ -47,12 +47,15 @@ public class FileResourceHelper
      */
     private final Map<Locale, StringHandler> m_stringsHandlers = new HashMap<>();
 
-    //TODO YAMLHandler en vérité
-    //private JSONHandler m_JSONHandler;
     /**
      * PropertiesHandler de cette instance de module
      */
     private PropertiesHandler m_PropertiesHandler;
+
+    /**
+     * YAMLHandler de cette instance de module
+     */
+    private YAMLHandler m_yamlHandler;
 
     /**
      * pseudo constructeur : renvoie l'instance correspondant au module indiqué
@@ -226,22 +229,24 @@ public class FileResourceHelper
     }
 
     /**
-     * renvoie un objet JSON racine de son fichier situé dans le répertoire
-     * resources/JSON du package appelant
+     * Méthode renvoyant le contenu entier du fichier YAML au bout du chemin
+     * (relatif au répertoire res/<NOM-MODULE>/app du module) sous la forme
+     * d'une map
      *
-     * @param p_baseFileName le nom du fichier et PAS son chemin complet
+     * @param p_path
      * @return
      * @throws FileNotFoundException
+     * @throws IOException
      */
-    /*public JsonObject loadJsonFile(String p_baseFileName) throws FileNotFoundException
+    public Map<String, Object> getYamlDoc(String p_path) throws FileNotFoundException, IOException
     {
-	if (m_JSONHandler == null)
+	if (m_yamlHandler == null)
 	{
-	    m_JSONHandler = new JSONHandler(m_instanceFolder);
+	    m_yamlHandler = new YAMLHandler(m_instanceFolder);
 	}
+	return m_yamlHandler.getYAMLDoc(p_path);
+    }
 
-	return m_JSONHandler.loadJsonFile(p_baseFileName);
-    }*/
     /**
      * renvoie une propriété définie par son nom et située dans le fichier au
      * bout du chemin (relatif au répertoire res/<NOM-MODULE>/app du module)

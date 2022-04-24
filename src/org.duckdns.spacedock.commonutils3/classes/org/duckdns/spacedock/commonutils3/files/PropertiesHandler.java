@@ -29,7 +29,7 @@ import java.util.Properties;
  * d'un projet
  *
  * Regles de nommage : les fichiers doivent figurer dans le répertoire
- * <package>/resources/app
+ * res/<NOM-MODULE>/app
  *
  * @author ykonoclast
  */

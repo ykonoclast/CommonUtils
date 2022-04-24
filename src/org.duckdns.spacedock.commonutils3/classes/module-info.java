@@ -5,4 +5,5 @@
 
 module org.duckdns.spacedock.commonutils3 {
     exports org.duckdns.spacedock.commonutils3.files;
+    requires org.snakeyaml.engine.v2;
 }
